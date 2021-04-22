@@ -25,4 +25,4 @@ public class Question2
     //print bmi
     System.out.println("Your bmi is: " + bmi);
   }
-}
+} 
