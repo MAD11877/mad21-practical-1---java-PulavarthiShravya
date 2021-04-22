@@ -12,12 +12,12 @@ public class Question2
     */
     Scanner in = new Scanner(System.in);
      //prompt user for weight
-    System.out.println("Enter Weight in KG: ");
+    //System.out.println("Enter Weight in KG: ");
     //"read" weight
     double weight = in.nextDouble();
 
     //prompt user for height
-    System.out.println("Enter Height in m: ");
+    //System.out.println("Enter Height in m: ");
     //"read height"
     double height = in.nextDouble();
     
