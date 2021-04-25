@@ -1,4 +1,7 @@
+import java.util.Collections;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.*;
 
 public class Question5
 {
@@ -26,7 +29,34 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);  
+    int num_int = in.nextInt();
+
+    ArrayList<Integer> data = new ArrayList<Integer>();
+    int max_num = 0;
+    int result = 0;
+
+    for(int i = 0;
+    i < num_int;
+    i++) {
+
+      int number = in.nextInt();
+      data.add(number);
+
+    }
+
+    for (int j = 0; 
+    j < num_int; 
+    j++) {
+      int num = data.get(j);
+      int occurrences = Collections.frequency(data, num);
+      if (max_num < occurrences) {
+      max_num = occurrences;
+      result = num;
+      }
+    }
+
+    System.out.print(result);
     
   }
 }

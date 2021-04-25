@@ -14,10 +14,23 @@ public class Question4
      *     **
      *     *
      * 
-     * Hint: 2 loops are required. System.out.print(...) to print on single line.
-     */
+     * Hint: 2 loops are required. System.out.print(...) to print on single line.*/
+     
      
     Scanner in = new Scanner(System.in);
-    
+
+    //prompt user for number
+    //System.out.println("Enter base number: ");
+    int num = in.nextInt();
+
+    //read the number
+    for(int i=num-1; i>=0; i--)   {  
+
+      for(int j=0; j<=i; j++)   {
+      System.out.print("*");   
+      }   
+      System.out.println();     
+    }
   }
-}
+} 
+
