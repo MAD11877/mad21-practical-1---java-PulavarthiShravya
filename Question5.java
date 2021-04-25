@@ -30,14 +30,14 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);  
-    int number_int = in.nextInt();
+    int num_int = in.nextInt();
 
     ArrayList<Integer> data = new ArrayList<Integer>();
-    int max = 0;
+    int max_num = 0;
     int result = 0;
 
     for(int i = 0;
-    i < number_int;
+    i < num_int;
     i++) {
 
       int number = in.nextInt();
@@ -46,12 +46,12 @@ public class Question5
     }
 
     for (int j = 0; 
-    j < number_int; 
+    j < num_int; 
     j++) {
       int num = data.get(j);
       int occurrences = Collections.frequency(data, num);
-      if (max < occurrences) {
-      max = occurrences;
+      if (max_num < occurrences) {
+      max_num = occurrences;
       result = num;
       }
     }
